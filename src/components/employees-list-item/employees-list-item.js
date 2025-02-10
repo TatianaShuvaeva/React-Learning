@@ -11,7 +11,7 @@ class EmployeesListItem extends Component {
         }
     }
     onIncrease = () => {
-        this.setState(({increase}) => ({
+        this.setState(({ increase }) => ({
             increase: !increase
         }))
     }
@@ -21,8 +21,8 @@ class EmployeesListItem extends Component {
             rise: !rise
         }))
     }
-    render () {
-        const {name, salary} = this.props;
+    render() {
+        const { name, salary } = this.props;
         const { increase, rise } = this.state;
 
         let classNames = "list-group-item d-flex justify-content-between"
@@ -55,7 +55,7 @@ class EmployeesListItem extends Component {
 
         )
     }
-   
+
 
 }
 
